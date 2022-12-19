@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript MadLibs Game</title>
+  <link rel="stylesheet" href="madlibs.css"/>
+  <script src="madlibs.js"></script>
+</head>
+<body>
+  <h1>JavaScript MadLibs Game</h1>
+  <h2>By Al Lizaso</h2>
+  <form id="madLibsForm" autocomplete="off">
+<!-- OLD
+    <label for="noun1">Enter a noun:</label>
+    <input type="text" id="noun1"><br>
+    <label for="verb1">Enter a verb:</label>
+    <input type="text" id="verb1"><br>
+    <label for="adjective1">Enter an adjective:</label>
+    <input type="text" id="adjective1"><br>
+-->
+
+<!-- NEW -->
+    <label for="adjective1">Enter an adjective:</label>
+    <input type="text" id="adjective1"><br>
+    <label for="name1">Enter a planet name:</label>
+    <input type="text" id="name1"><br>
+    <label for="material1">Enter a type of material:</label>
+    <input type="text" id="material1"><br>
+    <label for="creatures1">Enter a type of creature (plural):</label>
+    <input type="text" id="creatures1"><br>
+    <label for="verb1">Enter a verb (past tense):</label>
+    <input type="text" id="verb1"><br>
+    <button type="submit">Create MadLibs Story</button>
+  </form>
+
+  <script>
+    // Add an event listener to the form
+    document.getElementById('madLibsForm').addEventListener('submit', function(event) {
+      // Cancel the default action (form submission)
+      event.preventDefault();
+
+      // Call the createMadLibsStory function
+      createMadLibsStory();
+    });
+  </script>
+</body>
+</html>
